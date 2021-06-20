@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(10,10,10);
+    border-radius: 5px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(30deg, rgb(231, 73, 25),rgb(255, 196, 35),rgb(248, 49, 108));
+    background-repeat: no-repeat;
+    background-size: 400%;
+    animation: bg-animation 20s infinite ease-in alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100%{
+        background-position: right;  
+    }
+}

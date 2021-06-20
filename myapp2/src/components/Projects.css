@@ -1,0 +1,130 @@
+/* font-family: 'Quicksand', sans-serif; */
+
+.all-projects{
+    margin: 110px 10% 50px 10%;   
+    background-color: rgb(255, 217, 181);
+    background-size: 90px;
+    border-radius: 50px;
+    padding: 35px 50px;
+    box-shadow: -3px 3px 7px rgb(53, 53, 53);
+}
+
+.all-projects h2{
+    width: 50vw;
+    padding: 8px 0px;
+    color: rgb(223, 0, 0);
+    border-bottom: 3px solid rgb(223, 0, 0);
+}
+
+.all-projects h4{
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.projects p{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    top: 107%;
+    text-align: center;
+}
+
+.project1,.project2{
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 15px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.project1:hover,.project2:hover{
+    transform: scale(1.1);
+    border-color: green;
+}
+
+.project1-popup,.project2-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+
+.project1-popup p,.project2-popup p{
+    color: rgb(231, 231, 231);
+}
+
+.bg-popup1{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.projects i{
+    position: relative;
+    float: right;
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 50%;
+    font-size: 25px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.projects i:hover{
+    transform: scale(1.1);
+    color: rgb(223, 0, 0);
+    border-color: rgb(223, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .all-projects{
+        margin: 110px 7% 50px 7%;   
+    }
+    .projects{
+        margin-left: 0;
+    }
+    .project1-popup,.project2-popup{
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+}

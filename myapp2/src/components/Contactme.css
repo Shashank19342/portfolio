@@ -1,0 +1,150 @@
+.contact{
+    background-color: rgb(31, 31, 31);
+    box-shadow: 0px -3px 7px rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    margin-top: 120px;
+}
+
+.contactme{
+    width: 50%;
+}
+
+.contactme h2{
+    color: rgb(231,231,231);
+    margin: 0 0 0 10%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(231,231,231);
+    width: 70%;
+}
+
+.contact-form{
+    margin: 30px 0 30px 10%;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: space-around;
+}
+
+.contact-opt{
+    color: rgb(231,231,231);
+    font-family: 'Quicksand', sans-serif; 
+    margin: 10px 0px;
+}
+
+.contact-name-field{
+    font-family: 'Quicksand', sans-serif; 
+    padding: 0px 5px;
+    height: 30px;
+}
+
+.contact-email-field{
+    font-family: 'Quicksand', sans-serif; 
+    padding: 0px 5px;
+    height: 30px;
+}
+
+.contact-message-field{
+    font-family: 'Quicksand', sans-serif; 
+    padding: 5px 5px;
+}
+
+.contact-submit-btn{
+    font-family: 'Quicksand', sans-serif; 
+    margin-top: 20px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.thumbsup{
+    display: none;
+}
+
+.thumbsup i{
+    color: rgb(231,231,231);
+    position: relative;
+    left: 103%;
+    top: -46px;
+    font-size: 40px;
+    opacity: 0;
+    animation: thumbsup 2s ease 1;
+}
+
+@keyframes thumbsup {
+    0%{
+        left: 95%;
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+    80%{
+        left: 103%;
+        opacity: 1;
+    }
+    100%{
+        left: 103%;
+        opacity: 0;
+        display: none;
+    }
+}
+
+.followme{
+    width: 50%;
+}
+
+.followme h2{
+    color: rgb(231,231,231);
+    margin: 0 0 0 10%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(231,231,231);
+    width: 70%;
+}
+
+.social-links{
+    margin: 45px 0 60px 10%;
+    font-size: 50px;
+}
+
+.social-links a{
+    margin: 20px 80px 20px 0px;
+    color: rgb(231,231,231);
+}
+
+.social-links i:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+}
+
+.followme p{
+    color: rgb(231,231,231);
+    font-family: 'Quicksand', sans-serif;
+    margin: 7px 0 0 10%;
+    width: 70%;
+}
+
+@media screen and (max-width: 768px){
+    .contact-form{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contact{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .contactme{
+        width: 100%;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .followme{
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+
+.swipe-back{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mySwiper{
+    height: 500px;
+    width: 700px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: 2px solid black;
+}
+
+.swiperSlide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 60px;
+    color: rgb(231, 231, 231);
+}
+
+.swiperSlide img{
+    margin-bottom: 30px;
+    width: 169px;
+    height: 172px;
+}
+
+.swiperSlide p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+
+.quote{
+    font-size: 120%;
+}
+
+@media screen and (max-width: 768px) {
+    .mySwiper{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .swiperSlide{
+        padding: 10px 40px;
+    }
+} 

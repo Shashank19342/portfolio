@@ -1,0 +1,177 @@
+/* font-family: 'Quicksand', sans-serif; */
+
+.all-skills{
+    margin: 110px 10% 50px 10%;   
+    background: url("../Images/skills.png"),url("../Images/skills2.png"),url("../Images/skills3.png"),rgb(255, 217, 181);
+    background-repeat: no-repeat;
+    background-position: 89% 12%, 81% 43%, 95% 70%;
+    background-size: 90px;
+    border-radius: 50px;
+    padding: 35px 50px;
+    box-shadow: -3px 3px 7px rgb(53, 53, 53);
+    animation: svg-animation 8s ease infinite;
+}
+
+@keyframes svg-animation {
+    0%{
+        background-position: 89% 12%, 81% 43%, 95% 70%;
+    }
+    25%{
+        background-position: 92% 10%, 83% 45%, 93% 74%;
+    }
+    50%{
+        background-position: 94% 12%, 85% 43%, 91% 70%;
+    }
+    75%{
+        background-position: 92% 14%, 83% 41%, 93% 66%;
+    }
+    100%{
+        background-position: 89% 12%, 81% 43%, 95% 70%;
+    }
+}
+
+.all-skills h2{
+    width: 50vw;
+    padding: 8px 0px;
+    color: rgb(223, 0, 0);
+    border-bottom: 3px solid rgb(223, 0, 0);
+}
+
+.all-skills h4{
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.skill p{
+    margin: 20px;
+}
+
+.skill1,.skill1-popup{
+    background: url("../Images/Python-certificate1.png"),rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill2,.skill2-popup{
+    background: url("../Images/Python-certificate2.png"),rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill3,.skill3-popup{
+    background: url("../Images/ProblemSolving.png"),rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill4,.skill4-popup{
+    background: url("../Images/ML-certificate1.png"),rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.skill5,.skill5-popup{
+    background: url("../Images/ML-certificate2.png"),rgba(0, 0, 0, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.skill1,.skill2,.skill3,.skill4,.skill5{
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 5px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.skill1:hover,.skill2:hover,.skill3:hover,.skill4:hover,.skill5:hover{
+    transform: scale(1.1);
+    border-color: green;
+}
+
+.skill1-popup,.skill2-popup,.skill3-popup,.skill4-popup,.skill5-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 800px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid black;
+    border-radius: 50px;
+    display: none;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+
+.bg-popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    display: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.skill i{
+    position: relative;
+    float: right;
+    border: 2px solid rgb(231, 231, 231);
+    border-radius: 50%;
+    font-size: 25px;
+    color: rgb(231, 231, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.skill i:hover{
+    transform: scale(1.1);
+    color: rgb(223, 0, 0);
+    border-color: rgb(223, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .all-skills{
+        background: rgb(255, 217, 181);
+        margin: 110px 7% 50px 7%;   
+    }
+    .skill{
+        margin-left: 0;
+    }
+    .skill1-popup,.skill2-popup,.skill3-popup,.skill4-popup,.skill5-popup{
+        width: 95%;
+        height: 90%;
+        background-size: 90%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .skill{
+        flex-direction: column;
+        align-items: center;
+    }
+}

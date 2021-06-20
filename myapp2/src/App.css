@@ -1,0 +1,21 @@
+
+.scroll-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(20, 20, 20, 0.6);
+    border: 2px solid black;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll-top:hover{
+    background-color: rgba(20, 20, 20, 0.8);
+}
+
+.scroll-top i{
+    font-size: 25px;
+    padding: 8px;
+}

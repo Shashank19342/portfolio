@@ -1,0 +1,50 @@
+
+.aboutme{
+    background: url("../Images/my-image2.png"),rgb(255, 217, 181);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    margin-top: 65px;
+    margin-left: 70px;
+    padding: 35px 50px;
+    box-shadow: -3px 3px 7px rgb(53, 53, 53);
+}
+
+.aboutme h2{
+    padding: 8px 0px;
+    width: 55vw;
+    border-bottom: 4px solid rgb(223, 0, 0);
+    color: rgb(223, 0, 0);
+}
+
+.paragraph{
+    margin-top: 40px;
+    width: 65%;
+}
+
+.paragraph p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgb(255, 217, 181);
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme{
+        margin-left: 20px;
+        background-position: 100% 80%;
+        background-size: 55%;
+    }
+    .paragraph{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    
+    .aboutme{
+        background-position: 100% 90%;
+        background-size: 50%;
+    }
+    .paragraph{
+        width: 100%;
+    }
+}
